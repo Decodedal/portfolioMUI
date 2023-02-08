@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
+import { CssBaseline, Stack } from '@mui/material';
+import Shop from './sites/Shop';
+import SuperHero from './sites/superHero';
+import WhatTheChef from './sites/whatTheChef';
 import './App.css';
+import NavBar from './components/NavBar';
+import Hero from './components/hero';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <CssBaseline/>
+    <NavBar/>
+    <Hero/>
+    <Stack direction={"row"} justifyContent="space-evenly">
+      <SuperHero/>
+      <WhatTheChef/>
+      <Shop/>
+    </Stack>
     </div>
   );
 }
