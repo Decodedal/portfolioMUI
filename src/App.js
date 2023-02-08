@@ -13,7 +13,7 @@ function App() {
     <CssBaseline/>
     <NavBar/>
     <Hero/>
-    <Stack direction={"row"} justifyContent="space-evenly">
+    <Stack direction={{xs:"colunm", md:"row"}} justifyContent="space-evenly" alignItems={"center"} gap={5}>
       <SuperHero/>
       <WhatTheChef/>
       <Shop/>
