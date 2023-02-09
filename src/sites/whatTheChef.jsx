@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import logo from "../imgs/what the chef/logo.jpg"
 import CloseIcon from '@mui/icons-material/Close';
+import franks from "../imgs/what the chef/franks.jpg"
 
 const WhatTheChef = () =>{
 
@@ -42,11 +43,16 @@ const WhatTheChef = () =>{
         <IconButton sx={{position:"fixed", right:"0", margin:"15px"}} onClick={() => setSize(false)}>
         <CloseIcon size="large" />
         </IconButton>
-        <Stack  height="100vh" direction={{xs:"column", md:"row"}} justifyContent="center" alignItems={"center"} gap={{xs:"3rem", md:"1rem"}}>
-            <Box width={{xs:"100%", md:"40%"}} minHeight="50vh"  border="3px solid black" >1</Box>
-            <Box width={{xs:"100%", md:"40%"}} minHeight="50vh" border="3px solid black" >
-                <Typography sx={{textDecoration:"underline"}} fontSize={"large"} component={"h1"} textAlign={"center"}>React superheros</Typography>
-                <Stack sx={{height:"50vh"}} justifyContent="space-around" padding={3}>
+        <Stack  height="100vh" direction={{xs:"column-reverse", md:"row"}} justifyContent="center" marginTop={{xs:"5rem", md:0}} alignItems={"center"} gap='1rem'>
+            <Box width={{xs:"100%", md:"40%"}} minHeight="50vh">
+             {/* image display box */}
+             <img style={{width:"100%", borderRadius:"10px", objectFit:"cover" , boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}  
+             src={franks} alt="single recipe page for hotdogs"
+             />
+            </Box>
+            <Box width={{xs:"100%", md:"40%"}} minHeight="70vh" boxShadow={4} borderRadius="20px" margin={2}>
+                <Typography sx={{textDecoration:"underline"}} fontSize={"large"} component={"h1"} mb={3} mt={3}  textAlign={"center"}>What The Chef</Typography>
+                <Stack sx={{height:"60vh"}} justifyContent="space-around" gap={5} padding={3}>
                     <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.</Typography>
                     <Box margin={"0 auto"}>
                         <Typography sx={{textDecoration:"underline"}} fontSize={"large"}>
@@ -55,10 +61,11 @@ const WhatTheChef = () =>{
                     <ul>
                         <li>React</li>
                         <li>Node.js</li>
-                        <li>Chart-js-2</li>
+                        <li>Postgrest / Sequelize</li>
+                        <li>Bootstrap</li>
                     </ul>
                     </Box>
-                    <Button fullWidth variant="contained">Checkout the live project</Button>
+                    <a style={{textDecoration:"none",}} href='https://what-the-chef-frontend.onrender.com/' target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
                 </Stack>
             </Box>
         </Stack>
