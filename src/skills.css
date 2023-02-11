@@ -1,0 +1,48 @@
+.skills-container{
+    width:100%;
+  
+    min-height: 20vh;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.skills-img{
+    width:200px;
+    height:200px;
+    transform: rotate(-10deg);
+    animation: 20s linear 1s infinite alternate side-scroll;
+}
+
+@keyframes side-scroll {
+  from {
+    transform: translateX(-100vw);
+
+  }
+ 
+  to {
+    transform: translateX(100vw);
+  }
+  
+}
+
+@keyframes mini {
+    from {
+      transform: translateX(-600vw);
+  
+    }
+   
+    to {
+      transform: translateX(100vw);
+    }
+    
+  }
+
+
+@media(max-width:600px) 
+{
+  .skills-img{
+    animation: 20s linear 1s infinite alternate mini;
+  }
+}

@@ -53,7 +53,7 @@ const WhatTheChef = () =>{
             <Box width={{xs:"100%", md:"40%"}} minHeight="70vh" boxShadow={4} borderRadius="20px" margin={2}>
                 <Typography sx={{textDecoration:"underline"}} fontSize={"large"} component={"h1"} mb={3} mt={3}  textAlign={"center"}>What The Chef</Typography>
                 <Stack sx={{height:"60vh"}} justifyContent="space-around" gap={5} padding={3}>
-                    <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.</Typography>
+                    <Typography>SERN Stack App to store your favorite recipes. I made this app with a group. We collaborated using github. I Was in Charge of developing the backend  REST API, and designing the postgres database.  The biggest challenge we faced with this project was that users are allowed to enter any number of steps and ingredients for a recipe. So the code that was incharge of adding and updating recipes had to be flexible. </Typography>
                     <Box margin={"0 auto"}>
                         <Typography sx={{textDecoration:"underline"}} fontSize={"large"}>
                             Technologies used

@@ -49,7 +49,7 @@ const Shop = () => {
         <CloseIcon size="large" />
         </IconButton>
         <Stack  height="100vh" direction={{xs:"column-reverse", md:"row"}} justifyContent="center" marginTop={{xs:"5rem", md:0}} alignItems={"center"} gap='1rem'>
-            <Box width={{xs:"100%", md:"40%"}} Height="500px">
+            <Box width={{xs:"100%", md:"45%"}} Height="500px">
              {/* image display box */}
              <img style={{width:"100%", borderRadius:"10px", objectFit:"cover" , boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}
                src={expandedPic} 
@@ -61,7 +61,7 @@ const Shop = () => {
                   Style Central
                   </Typography>
                 <Stack sx={{height:"60vh"}} justifyContent="space-around" gap={5} padding={3}>
-                    <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.</Typography>
+                    <Typography>A stunning web marketplace featuring persistent shopping cart, and Secure user sign in. Passwords are hashed on the backend which sends a jwt to local storage to continuously persist the user. Local storage is also used to create the persistent shopping cart. A node.js backend stores user login as well as a record of likes and shopping cart so that a user can sign in on any device and have their shopping cart and likes follow them around. </Typography>
                     <Box margin={"0 auto"}>
                         <Typography sx={{textDecoration:"underline"}} fontSize={"large"}>
                             Technologies used

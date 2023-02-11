@@ -6,6 +6,8 @@ import WhatTheChef from './sites/whatTheChef';
 import './App.css';
 import NavBar from './components/NavBar';
 import Hero from './components/hero';
+import Skills from './components/skills';
+import Projects from './components/projects';
 
 function App() {
   return (
@@ -13,11 +15,8 @@ function App() {
     <CssBaseline/>
     <NavBar/>
     <Hero/>
-    <Stack direction={{xs:"colunm", md:"row"}} justifyContent="space-evenly" alignItems={"center"} gap={5}>
-      <SuperHero/>
-      <WhatTheChef/>
-      <Shop/>
-    </Stack>
+    <Skills/>
+    <Projects/>
     </div>
   );
 }

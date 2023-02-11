@@ -46,14 +46,14 @@ const SuperHero = () =>{
         <CloseIcon size="large" />
         </IconButton>
         <Stack  height="100vh" direction={{xs:"column-reverse", md:"row"}} justifyContent="center" marginTop={{xs:"5rem", md:0}} alignItems={"center"} gap='1rem'>
-            <Box width={{xs:"100%", md:"40%"}} minHeight="50vh">
+            <Box width={{xs:"100%", md:"50%"}} minHeight="50vh">
              {/* image display box */}
              <img style={{width:"100%", borderRadius:"10px", objectFit:"cover" , boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}  src={kidFlash} alt="single super hero page for kid flash"/>
             </Box>
             <Box width={{xs:"100%", md:"40%"}} minHeight="70vh" boxShadow={4} borderRadius="20px" margin={2}>
-                <Typography sx={{textDecoration:"underline"}} fontSize={"large"} component={"h1"} mb={3} mt={3}  textAlign={"center"}>What The Chef</Typography>
+                <Typography sx={{textDecoration:"underline"}} fontSize={"large"} component={"h1"} mb={3} mt={3}  textAlign={"center"}>React SuperHeros</Typography>
                 <Stack sx={{height:"60vh"}} justifyContent="space-around" gap={5} padding={3}>
-                    <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore id, aliquam libero error illum laboriosam odit mollitia ipsa! Architecto explicabo culpa qui veritatis excepturi? Doloremque eligendi a fugit iure.</Typography>
+                    <Typography>This was a solo project I completed over the course of two weeks. It Displays Info and stats in the form of a graph for  hundreds of superheroes and villains. I obtained this data from the superHero API. I made my own node.js backend to organize the data In custom ways before being sent for display on the front end. </Typography>
                     <Box margin={"0 auto"}>
                         <Typography sx={{textDecoration:"underline"}} fontSize={"large"}>
                             Technologies used
