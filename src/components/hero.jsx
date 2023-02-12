@@ -1,22 +1,32 @@
-import { Box, Stack } from '@mui/material'
-import * as React from 'react';
+import { Box, Paper, Stack } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-
+import { margin } from '@mui/system';
+import Dallas from "../imgs/Dallas.jpg"
+import { useState } from 'react';
 
 const Hero = () => {
+const cat = 'http://placekitten.com/400/400'
+
+const [photo, setPhoto] = useState(Dallas)
+
+
   return (
     <Stack id="aboutMe" minHeight="70vh" alignItems={"center"} justifyContent={"center"} >
       <Stack  width="100%" height={"100%"} direction={{xs:"colenm", md:"row"}} justifyContent="space-around" alignItems={"center"}>
-    <Box width={{xs:"40%", md:"20%"}}>
-    <img style={{width:"100%"}} className='dallas-img' src='http://placekitten.com/400/400' alt="quality picture of Dallas in his natural environment"/>
+    <Box width={{xs:"40%", md:"20%"}} borderRadius="100%" onMouseEnter={() => setPhoto(cat)} onMouseLeave={()=>setPhoto(Dallas)} mb={1}>
+    <img style={{width:"100%", aspectRatio:"1"}} className='dallas-img' src={photo} alt="quality picture of Dallas in his natural environment"/>
     </Box>
     <Box width={{xs:"100%", md:"70%"}}>
-      <Typography textAlign={"center"} style={{textDecoration:"underline"}} pb={1}>About Me</Typography>
-      <Typography textAlign={"center"} pr={3}>Hi there, welcome to my website My name is Dallas. I am a 29 year old full stack web developer. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quas itaque tempore vero veniam libero doloribus magnam a quo earum in, iure eveniet dolore ullam neque nam! Maxime, mollitia dolores!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus fugiat nam repudiandae animi ipsa, iure dicta porro minus asperiores officiis dolorem vel voluptatem maiores adipisci atque officia autem optio!</Typography>
+      <Paper elevation={3} sx={{padding:"4rem", borderRadius:"10px", marginBottom:"30px" }}>
+      <Typography textAlign={"center"} component="h1" fontSize={"2.5rem"} style={{textDecoration:"underline"}} pb={1}>About Me</Typography>
+      <Typography textAlign={"center"} pr={3} fontSize="large">
+      Hello, and welcome to my website! My name is Dallas. I am a 29-year-old full-stack web developer and recent graduate of the NYU Software Development Professional Certificate Course. I am a lifelong multi-instrumentalist and former audio professional. I have found in coding an endless frontier of new challenges and possibilities that really satisfy me. Over the past year and a half, I have learned a great deal and found a new relationship with the internet as a contributor after a lifetime of being a user. I built this site to showcase the full-stack applications I have built so far. I hope you enjoy it!
+      </Typography>
+      </Paper> 
     </Box>
     </Stack> 
      </Stack>

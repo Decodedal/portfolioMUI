@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Paper } from '@mui/material'
 import React from 'react'
 import "../skills.css"
 import html from  "../imgs/skills/html.png"
@@ -17,14 +17,14 @@ console.log(placeSkills)
 
 
 
-const Skills = () => {
+const Skills = ({mode}) => {
   return (
     // <Box mb={2} width={"100%"} border="3px solid green"
     // minHeight={"20vh"}>
 
     // </Box>
+    <Paper elevation={mode === "light" ? "0" : "1"} sx={{padding:"1rem"}}>
     <div className='skills-container'>
-      
       <img className='skills-img' src={html} alt="html and css"/>
       <img className='skills-img' src={javascript} alt="javascript"/>
       <img className='skills-img' src={react} alt="react"/>
@@ -34,6 +34,7 @@ const Skills = () => {
       <img className='skills-img' src={psql} alt="PostgresSQL"/>
       <img className='skills-img' src={mongo} alt="MongoDB"/>
     </div>
+    </Paper>
   )
 }
 

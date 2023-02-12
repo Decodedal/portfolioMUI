@@ -6,8 +6,8 @@ import WhatTheChef from '../sites/whatTheChef'
 
 const Projects = () => {
   return (
-    < div id="projects">
-    <Typography variant='h3' textAlign={"center"} m={5}>Full Stack Projects</Typography>
+    < div id="projects" >
+    <Typography variant='h3'textAlign={"center"} m={5}>Full Stack Projects</Typography>
     <Stack direction={{xs:"colunm", md:"row"}} minHeight={"40vh"} justifyContent="space-evenly" alignItems={"center"} mt={3} gap={5}>
       <SuperHero/>
       <WhatTheChef/>
