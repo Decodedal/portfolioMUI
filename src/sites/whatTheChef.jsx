@@ -1,5 +1,4 @@
 import { Box, Button, Grow, IconButton, Paper, Stack } from "@mui/material"
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,12 +6,12 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import logo from "../imgs/what the chef/logo.jpg"
 import CloseIcon from '@mui/icons-material/Close';
-import franks from "../imgs/what the chef/franks.jpg"
 import db from "../imgs/what the chef/db.png"
+import { useState } from "react";
 
 const WhatTheChef = () =>{
 
-    const [size, setSize] = React.useState(false)
+    const [size, setSize] = useState(false)
 
     return(
         <>
@@ -67,7 +66,7 @@ const WhatTheChef = () =>{
                         <li>Bootstrap</li>
                     </ul>
                     </Box>
-                    <a style={{textDecoration:"none",}} href='https://what-the-chef-frontend.onrender.com/' target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
+                    <a style={{textDecoration:"none",}} href='https://what-the-chef-frontend.onrender.com/' rel="noreferrer" target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
                 </Stack>
             </Paper>
         </Stack>

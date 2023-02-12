@@ -7,7 +7,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import index from "../imgs/super/index.jpg"
 import CloseIcon from '@mui/icons-material/Close';
 import Grow from '@mui/material/Grow';
 import expandedPic from "../imgs/shop/fullscreen.jpg"
@@ -75,7 +74,7 @@ const Shop = () => {
                         <li>bCrypt</li>
                     </ul>
                     </Box>
-                    <a style={{textDecoration:"none",}} href='https://style-central.onrender.com/' target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
+                    <a style={{textDecoration:"none",}} href='https://style-central.onrender.com/' rel="noreferrer" target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
                 </Stack>
             </Paper>
         </Stack>

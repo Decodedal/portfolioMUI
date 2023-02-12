@@ -1,5 +1,5 @@
 
-import { Box, Button, IconButton, ImageList, ImageListItem, Paper, Stack } from '@mui/material'
+import { Box, Button, IconButton, Paper, Stack } from '@mui/material'
 import { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -66,7 +66,7 @@ const SuperHero = () =>{
                         <li>chart.js</li>
                     </ul>
                     </Box>
-                    <a style={{textDecoration:"none",}} href='https://react-superheros.onrender.com/' target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
+                    <a style={{textDecoration:"none",}} href='https://react-superheros.onrender.com/' rel="noreferrer" target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
                 </Stack>
             </Paper>
         </Stack>

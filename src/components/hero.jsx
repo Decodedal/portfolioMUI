@@ -1,10 +1,5 @@
 import { Box, Paper, Stack } from '@mui/material'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import { margin } from '@mui/system';
 import Dallas from "../imgs/Dallas.jpg"
 import { useState } from 'react';
 
@@ -18,7 +13,7 @@ const [photo, setPhoto] = useState(Dallas)
     <Stack id="aboutMe" minHeight="70vh" alignItems={"center"} justifyContent={"center"} >
       <Stack  width="100%" height={"100%"} direction={{xs:"colenm", md:"row"}} justifyContent="space-around" alignItems={"center"}>
     <Box width={{xs:"40%", md:"20%"}} borderRadius="100%" onMouseEnter={() => setPhoto(cat)} onMouseLeave={()=>setPhoto(Dallas)} mb={1}>
-    <img style={{width:"100%", aspectRatio:"1"}} className='dallas-img' src={photo} alt="quality picture of Dallas in his natural environment"/>
+    <img style={{width:"100%", aspectRatio:"1"}} className='dallas-img' src={photo} alt="Dallas in his natural environment"/>
     </Box>
     <Box width={{xs:"100%", md:"70%"}}>
       <Paper elevation={3} sx={{padding:"4rem", borderRadius:"10px", marginBottom:"30px" }}>

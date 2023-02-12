@@ -1,4 +1,4 @@
-import { Box, Paper } from '@mui/material'
+import { Paper } from '@mui/material'
 import React from 'react'
 import "../skills.css"
 import html from  "../imgs/skills/html.png"
