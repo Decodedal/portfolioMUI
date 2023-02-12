@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 
 const Hero = () => {
   return (
-    <Stack minHeight="70vh" alignItems={"center"} justifyContent={"center"} >
+    <Stack id="aboutMe" minHeight="70vh" alignItems={"center"} justifyContent={"center"} >
       <Stack  width="100%" height={"100%"} direction={{xs:"colenm", md:"row"}} justifyContent="space-around" alignItems={"center"}>
     <Box width={{xs:"40%", md:"20%"}}>
     <img style={{width:"100%"}} className='dallas-img' src='http://placekitten.com/400/400' alt="quality picture of Dallas in his natural environment"/>

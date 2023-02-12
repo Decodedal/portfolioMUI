@@ -18,11 +18,11 @@ const SuperHero = () =>{
 
     return(
         <>
-        <Card sx={{ maxWidth: 345 }}>
+       <Card sx={{minWidth:{xs:"90%", md:"30%"}, minHeight:{xs:"30%", md:"100%"}}}>
         <CardActionArea onClick={() => setSize(true)}>
           <CardMedia
             component="img"
-            height="140"
+            height="300"
             image={index}
             alt="green iguana"
             sx={{objectFit:"Cover"}}

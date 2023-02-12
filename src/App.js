@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Hero from './components/hero';
 import Skills from './components/skills';
 import Projects from './components/projects';
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Hero/>
     <Skills/>
     <Projects/>
+    <Contact/>
     </div>
   );
 }

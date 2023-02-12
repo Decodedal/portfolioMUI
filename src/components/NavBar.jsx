@@ -13,10 +13,9 @@ return(
             Dallas Portfolio
             </Stack>
             <Stack gap={4} direction={"row"}>
-                <Typography>About</Typography>
-                <Typography>Projects</Typography>
-                <Typography>Contact</Typography>
-                
+                <a href="#aboutMe"><Typography>About</Typography></a>
+                <a href="#projects"><Typography>Projects</Typography></a>
+                <a href="#contact"><Typography>Contact</Typography></a>                
             </Stack>
             </Stack>
 

@@ -11,18 +11,19 @@
 .skills-img{
     width:200px;
     height:200px;
-    transform: rotate(-10deg);
-    animation: 20s linear 1s infinite alternate side-scroll;
+    
+    animation:20s linear 1s infinite alternate side-scroll;
 }
 
 @keyframes side-scroll {
   from {
-    transform: translateX(-100vw);
+    transform: translateX(-40vw);
 
   }
  
   to {
-    transform: translateX(100vw);
+    transform: translateX(10vw);
+    
   }
   
 }
