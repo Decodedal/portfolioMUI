@@ -54,7 +54,7 @@ const WhatTheChef = () =>{
                 <Stack justifyContent="space-around" gap={5} padding={3}>
                   <Box>
                 <Typography sx={{textDecoration:"underline"}} fontSize={"large"} component={"h1"} mb={3} mt={3}  textAlign={"center"}>What The Chef</Typography>
-                    <Typography component={"p"}>SERN Stack App to store your favorite recipes. I made this app with a group of my classmates. We collaborated using github. I Was in Charge of developing the backend  REST API, and designing the postgres database.  The biggest challenge we faced with this project was that users are allowed to enter any number of steps and ingredients for a recipe. So the code that was incharge of adding and updating recipes had to be flexible. </Typography>
+                    <Typography component={"p"}>SERN stack app to store your favorite recipes. I made this app with a group of my classmates. We collaborated using github. I was incharge of developing the backend  REST API, and designing the postgres database.  The biggest challenge we faced with this project was that users are allowed to enter any number of steps and ingredients for a recipe. So the code that was incharge of adding and updating recipes had to be flexible. </Typography>
                     </Box>
                     <Box margin={"0 auto"}>
                         <Typography sx={{textDecoration:"underline"}} fontSize={"large"}>
