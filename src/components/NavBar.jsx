@@ -18,6 +18,7 @@ return(
             Dallas Portfolio
             </Stack>
             <Stack  direction={"row"} alignItems="center"> 
+            <Stack direction={"row"} alignItems="center" width={"23vw"} justifyContent={"space-evenly"} sx={{display:{xs:"none", lg:"flex"}}} >
             <Stack direction={"row"} alignItems="center">
             {mode === "light" ?    
                 <ModeNight/>
@@ -26,7 +27,7 @@ return(
             } 
             <Switch defaultChecked onChange={e => setMode(mode === "light" ? "dark" : "light")}/>
             </Stack>
-              <Stack direction={"row"} justifyContent={"space-around"} width={"15vw"} sx={{display:{xs:"none", lg:"flex"}}} >
+              
                 <a href="#aboutMe"><Typography>About</Typography></a>
                 <a href="#projects"><Typography>Projects</Typography></a>
                 <a href="#contact"><Typography>Contact</Typography></a>      
@@ -61,11 +62,17 @@ return(
                   </IconButton>
                   <Divider sx={{mb: 2}}/>
                   <Stack sx={{height:"30vh"}} justifyContent="space-evenly">
-                  <Button href="/shop/all" variant="contained">Shop All</Button>
-                  <Button href="/shop/men%27s%20clothing"  variant="contained">Mens</Button>
-                  <Button href="/shop/women%27s%20clothing" variant="contained">Womens</Button>
-                  <Button href="/shop/jewelery"  variant="contained">Jewelry</Button>
-                  <Button href="/shop/electronics" variant="contained">Electronics</Button>
+                  <Button  href="#aboutMe"><Typography>About</Typography></Button>
+                  <Button  href="#projects"><Typography>Projects</Typography></Button>
+                  <Button  href="#contact"><Typography>Contact</Typography></Button>
+                  <Stack direction={"row"} alignItems="center">
+                     {mode === "light" ?    
+                         <ModeNight/>
+                         :
+                         <LightMode/>
+                     } 
+            <Switch defaultChecked onChange={e => setMode(mode === "light" ? "dark" : "light")}/>
+            </Stack>
                   </Stack>
             </Box>
         </Drawer>

@@ -46,7 +46,7 @@ const SuperHero = () =>{
         <IconButton sx={{position:"fixed", right:"0", margin:"15px"}} onClick={() => setSize(false)}>
         <CloseIcon size="large" />
         </IconButton>
-        <Stack  height="100vh" direction={{xs:"column-reverse", md:"row"}} justifyContent="center" marginTop={{xs:"5rem", md:0}} alignItems={"center"} gap='1rem'>
+        <Stack  height="100vh" direction={{xs:"column", md:"row"}} justifyContent="center" marginTop={{xs:"5rem", md:0}} alignItems={"center"} gap='1rem'>
             <Box width={{xs:"100%", md:"50%"}} minHeight="50vh">
              {/* image display box */}
              <img style={{width:"100%", borderRadius:"10px", objectFit:"cover" , boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}  src={kidFlash} alt="single super hero page for kid flash"/>
