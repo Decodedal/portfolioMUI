@@ -67,7 +67,7 @@ const WhatTheChef = () =>{
                         <li> React Boot Strap</li>
                     </ul>
                     </Box>
-                    <a style={{textDecoration:"none",}} href='https://react-superheros.onrender.com/' rel="noreferrer" target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
+                    <a style={{textDecoration:"none",}} href='https://what-the-chef-frontend.onrender.com/' rel="noreferrer" target={"_blank"}><Button fullWidth variant="contained">Checkout the live project</Button></a>
                 </Stack>
                 </Stack>
             </Paper>
